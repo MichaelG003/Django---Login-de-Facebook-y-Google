@@ -1,0 +1,110 @@
+/* Estilo general */
+body {
+  font-family: "Great Vibes", cursive; /* Fuente para el texto principal */
+  font-size: 16px; /* Ajusta el tamaño base del texto */
+  color: #000000; /* Color negro para el texto principal */
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Encabezados */
+h1,
+h2,
+h3,
+h5 {
+  font-family: "Great Vibes", cursive;
+  color: #e91e63; /* Rosado para encabezados */
+}
+
+h1 {
+  font-size: 2.5rem; /* Tamaño del h1 */
+}
+
+h2 {
+  font-size: 2rem; /* Tamaño del h2 */
+}
+
+h3 {
+  font-size: 1.75rem; /* Tamaño del h3 */
+}
+p {
+  font-family: "Cinzel", serif; /* Tamaño del p */
+  font-size: medium;
+}
+li {
+  font-family: "Cinzel", serif;
+}
+a {
+  font-family: "Cinzel", serif;
+  color: #e91e63; /* Color de los links */
+  font-size: 0.9rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff; /* Fondo negro */
+  border-bottom: 2px solid #e91e63; /* Borde inferior rosado */
+}
+
+.navbar-brand,
+.navbar-nav a {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.9rem; /* Aumenta el tamaño de la fuente en el navbar */
+  color: #000000; /* Texto blanco */
+}
+
+.navbar-nav a:hover {
+  color: #e91e63; /* Rosado al pasar el mouse */
+}
+
+/* Botones y CTA */
+.button,
+.cta-text {
+  font-family: "Cinzel", serif;
+  font-size: 1rem; /* Tamaño del texto en botones y llamadas a la acción */
+  background-color: #e91e63; /* Fondo rosado */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  padding: 0.8rem 1.2rem; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d81b60; /* Color rosado más oscuro al pasar el mouse */
+}
+
+/* Otros textos */
+p {
+  font-size: 1rem; /* Ajusta el tamaño de párrafos y listas */
+  line-height: 1.6; /* Mejora la legibilidad */
+  color: #000000; /* Gris oscuro */
+}
+
+li {
+  font-size: 1rem; /* Ajusta el tamaño de párrafos y listas */
+  line-height: 1.6; /* Mejora la legibilidad */
+  color: #ffffff; /* Gris oscuro */
+}
+
+/* Aseguramos que los iconos sean de color negro */
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: rgb(245, 75, 75); /* Cambia el color de los iconos */
+  font-size: 2rem; /* Tamaño del icono (ajustalo según tus necesidades) */
+}
+
+/* Estilo de los controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 1; /* Asegura que los botones estén por encima del carrusel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Elimina padding extra */
+}
+
+/* Efecto de hover (opcional) */
+.carousel-control-prev:hover i,
+.carousel-control-next:hover i {
+  color: #ff4d94; /* Cambia el color al pasar el mouse */
+}

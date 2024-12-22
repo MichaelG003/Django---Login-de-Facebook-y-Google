@@ -4,21 +4,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}Zay Shop{% endblock %}</title>
+    <title>{% block title %}Sensuelle{% endblock %}</title>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'assets/icons/lenceria.ico' %}"
+    />
+
     <!-- Carga de CSS -->
     <link
       rel="stylesheet"
       href="{% static 'assets/css/fontawesome.min.css' %}"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
   </head>
   <body>
     <!-- Start Top Nav -->
-    <nav
-      class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block"
-      id="templatemo_nav_top"
-    >
+    <nav style="background-color: black" id="templatemo_nav_top">
       <div class="container text-light">
         <div class="w-100 d-flex justify-content-between">
           <div>
@@ -65,12 +79,16 @@
     <!-- Close Top Nav -->
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
-      <div class="container d-flex justify-content-between align-items-center">
+      <div class="container d-flex justify-content-center align-items-center">
         <a
           class="navbar-brand text-success logo h1 align-self-center"
           href="index.html"
         >
-          Sensuelle
+          <img
+            src="{% static 'assets/img/sensuellelogo2.png' %}"
+            alt="Logo"
+            style="width: 85px; height: auto"
+          />
         </a>
 
         <button
@@ -86,43 +104,28 @@
         </button>
 
         <div
-          class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+          class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-center"
           id="templatemo_main_nav"
         >
-          <div class="flex-fill">
-            <ul
-              class="nav navbar-nav d-flex justify-content-between mx-lg-auto"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Sobre Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html">Catálogo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contáctanos</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="nav navbar-nav d-flex justify-content-center mx-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><strong>Inicio</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"
+                ><strong>Sobre Nosotros</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html"><strong>Catálogo</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                ><strong>Contáctanos</strong></a
+              >
+            </li>
+          </ul>
           <div class="navbar align-self-center d-flex">
-            <div
-              class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3"
-            >
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputMobileSearch"
-                  placeholder="Search ..."
-                />
-                <div class="input-group-text">
-                  <i class="fa fa-fw fa-search"></i>
-                </div>
-              </div>
-            </div>
             <a
               class="nav-icon d-none d-lg-inline"
               href="#"
@@ -197,37 +200,33 @@
     {% endblock %}
 
     <!-- Start Footer -->
-    <footer class="bg-dark" id="tempaltemo_footer">
+    <footer id="tempaltemo_footer" style="background-color: black">
       <div class="container">
         <div class="row">
           <div class="col-md-4 pt-5">
-            <h2 class="h2 text-success border-bottom pb-3 border-light logo">
-              Zay Shop
-            </h2>
+            <h2 class="h2 border-bottom pb-3 border-light logo">Sensuelle</h2>
             <ul class="list-unstyled text-light footer-link-list">
               <li>
-                <i class="fas fa-map-marker-alt fa-fw"></i>
-                123 Consectetur at ligula 10660
+                <i class="fas fa-map-marker-alt fa-fw" style="color: white"></i>
+                Av. Las Fresias 128, La Molina.
               </li>
               <li>
-                <i class="fa fa-phone fa-fw"></i>
+                <i class="fa fa-phone fa-fw" style="color: white"></i>
                 <a class="text-decoration-none" href="tel:010-020-0340">
                   010-020-0340
                 </a>
               </li>
               <li>
-                <i class="fa fa-envelope fa-fw"></i>
+                <i class="fa fa-envelope fa-fw" style="color: white"></i>
                 <a class="text-decoration-none" href="mailto:info@company.com">
-                  info@company.com
+                  sensuelle@gmail.com
                 </a>
               </li>
             </ul>
           </div>
 
           <div class="col-md-4 pt-5">
-            <h2 class="h2 text-light border-bottom pb-3 border-light">
-              Further Info
-            </h2>
+            <h2 class="h2 border-bottom pb-3 border-light">Further Info</h2>
             <ul class="list-unstyled text-light footer-link-list">
               <li><a class="text-decoration-none" href="#">Inicio</a></li>
               <li>
@@ -291,20 +290,6 @@
               </li>
             </ul>
           </div>
-          <div class="col-auto">
-            <label class="sr-only" for="subscribeEmail">Email address</label>
-            <div class="input-group mb-2">
-              <input
-                type="text"
-                class="form-control bg-dark border-light"
-                id="subscribeEmail"
-                placeholder="Email address"
-              />
-              <div class="input-group-text btn-success text-light">
-                Subscribe
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -313,8 +298,11 @@
           <div class="row pt-2">
             <div class="col-12">
               <p class="text-left text-light">
-                Copyright &copy; 2021 Sensuelle | Designed by
-                <a rel="sponsored" href="https://templatemo.com" target="_blank"
+                Copyright &copy; 2024 Sensuelle | Diseñado por
+                <a
+                  rel="sponsored"
+                  href="https://www.facebook.com/SiDeRaLLL/?locale=es_LA"
+                  target="_blank"
                   >Tuvi</a
                 >
               </p>
